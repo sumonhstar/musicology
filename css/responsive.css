@@ -1,0 +1,543 @@
+/* ===small-device-navigation-menu==== */
+@media screen and (max-width:991.95px){
+    .nav-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:0;
+        left:-100%;
+        z-index: 100;
+        background-color: #303030;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        gap:35px;
+    }
+    .nav-menu li a{
+        font-size: 16px;
+        text-transform: capitalize !important;
+    }
+    .close-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .search-icon .open-menu{
+        display: inline-block;
+    }
+}
+
+/* =====responsive-extra-small-device====== */
+@media screen and (max-width:699.95px){
+    .sub-container,
+    .dance-container{
+        padding-inline: 10px;
+    }
+    /* ====header-section==== */
+    .header{
+        height: 100vh;
+    }
+    .logo img{
+        width:80%;
+        height:45px;
+    }
+    .search-icon img:first-child{
+        width:25px;
+    }
+    .search-icon .open-menu{
+        margin-left: 15px;
+    }
+    .header-text{
+        max-width:90%;
+        margin-top: 120px;
+        margin-bottom: 0px;
+    }
+    .header-text h2{
+        font-size: 52px;
+        margin-bottom: 15px;
+
+    }
+    .header-text p{
+        max-width: 600px;
+    }
+    .header-text p,
+    .dance-container p{
+        font-size: 16px;
+        margin-bottom: 25px;
+        line-height: 26px;
+        text-align: left;
+        margin-top: 0;
+    }
+    .btn{
+        font-size: 14px;
+        padding:15px 30px;
+    }
+    /* =====dance-tour-section====== */
+    .dance-container h2{
+        font-size: 40px;
+        text-transform: capitalize;
+        text-align: left;
+        margin-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .dance-card{
+        gap:30px;
+    }
+    .dance-card .card{
+        height: 400px;
+        margin-inline: auto;
+    }
+    .card-img{
+        height: 70%;
+    }
+    .card-text{
+        padding-bottom: 20px;
+    }
+    .card-text h4{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    .card-text span{
+        font-size: 16px;
+    }
+    /* ====prize-section-section==== */
+    .prize-card-box{
+        gap:30px;
+    }
+    .prize-card{
+        height:max-content;
+        padding:50px 0;
+    }
+    .prize-title{
+        padding-top: 60px;
+        text-align: left;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .prize-sub-title{
+        max-width:90%;
+        margin:0;
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .prize-card-img{
+        max-width:70px;
+    }
+    .prize-card-img img{
+        width:100%;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .prize-card-text{
+        margin-bottom: 15px;
+    }
+    .prize-card-sub-text{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .prize-card-btn{
+        width: 200px;
+    }
+    /* ===dance-ceta-section-start-here===  */
+    .dance-ceta-main-section{
+        background-color:#e8631c;
+        position: relative;
+    }
+    .dance-ceta-1{
+        height:max-content;
+        flex-direction: column;
+    }
+    .dance-ceta-1:last-child{
+        flex-direction: column-reverse;
+    }
+    .dance-ceta-1-img,
+    .dance-ceta-1-text{
+        flex-basis: 100%;
+        width: 100%;
+        height:100%;
+    }
+    .dance-ceta-1-img img{
+    max-width: 330px;
+    height:auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    }
+    .dance-ceta-1-text{
+        align-items: flex-start;
+        justify-content: center;
+        padding-inline: 10px;
+        margin-bottom: 20px;
+    }
+    .dance-ceta-1-text h3{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .dance-ceta-1-text p{
+        font-size: 16px;
+        text-align: left;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+    /* ===sats-section-start-here=== */
+    .sats-section h2{
+        padding-top: 100px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .sats-section p{
+        line-height: 26px;
+        font-size: 14px;
+        padding-bottom: 80px;
+    }
+    .sats-card{
+        gap:30px;
+        justify-content: center;
+    }
+    /* ===dancer-name-section===== */
+    
+.dancer-name-section{
+    height: max-content;
+}
+.dancer-name{
+    padding-block: 100px;
+}
+.dancer-name-text p{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom:20px;
+}
+.dancer-name-text h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+/* ===subcribe-section=== */
+.subcribe-section{
+    height: max-content;
+    padding-block: 50px;
+}
+.subcribe-section h3{
+    font-size: 35px;
+    padding-top:0px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 25;
+}
+.subcribe-section p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 25;
+}
+.submit-box{
+    max-width:767px;
+    margin-inline: 10px;
+    position: relative;
+    z-index: 25;
+    background-color: transparent;
+    flex-direction: column;
+    gap:10px;
+}
+.submit-box input{
+    width:80%;
+    padding:10px 20px;
+}
+.submit-btn{
+    width:50%;
+    height:35px;
+    font-size: 15px;
+}
+.submit-btn:hover{
+    font-size: 18px;
+}
+/* ====footer-section===== */
+.footer-section-container{
+    color:#fff;
+    flex-direction: column;
+    gap:40px;
+    padding-inline: 10px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4{
+    width: 100%;
+}
+.foter-title{
+    text-align: center;
+}
+/* ====back-to-top==== */
+.up-arrow{
+    width: 35px;
+    right:20px;
+}
+}
+
+/* ==========responsive-for-midume-device============ */
+@media screen and (min-width:700px) and (max-width:1199.95px){
+    .sub-container,
+    .dance-container{
+        padding-inline: 50px;
+    }
+/* ====header-section==== */
+.header{
+    height: 100vh;
+}
+.logo img{
+    width:80%;
+    height:45px;
+}
+.search-icon img:first-child{
+    width:25px;
+}
+.search-icon .open-menu{
+    margin-left: 15px;
+}
+.header-text{
+    max-width:90%;
+    margin-top: 150px;
+    margin-bottom: 0px;
+}
+.header-text h2{
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+.header-text p{
+    max-width: 600px;
+}
+.header-text p,
+.dance-container p{
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 0;
+}
+.btn{
+    font-size: 14px;
+    padding:15px 30px;
+}
+/* ====dance-tour-section====== */
+.dance-container h2{
+    font-size: 45px;
+}
+.dance-container p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.dance-card{
+    justify-content: space-around;
+}
+.dance-card .card{
+    max-width: 280px;
+}
+.card-img{
+    height: 260px;;
+}
+/* =====prize-tour-section====== */
+.prize-card-box{
+    justify-content: space-around !important;
+    position: relative;
+    z-index: 10;
+    row-gap: 30px;
+}
+.prize-card{
+    max-width:280px;
+    height: 400px;
+}
+.prize-card-img{
+    max-width:80px;
+}
+.prize-card-img img{
+    width:100%;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+.prize-card-btn{
+    width: 100%;
+}
+/* =====dance-ceta-section====== */
+.dance-ceta-1{
+    height:520px;
+}
+.dance-ceta-1-text h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.dance-ceta-1-text p{
+    font-size: 21px;
+    margin-bottom: 45px;
+}
+.dance-ceta-1-text .btn{
+    width: 50%;
+}
+/* =====sats-section====== */
+.sats-section h2{
+    padding-top: 100px;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.sats-section p{
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 70px;
+}
+.sats-card{
+    justify-content: center;
+    gap:20px;
+}
+.sats-card-1{
+    width: 280px;
+}
+/* =====dancer-name-section======= */
+.dancer-name-section{
+    height:550px;
+}
+.dancer-name-text p{
+    font-size: 23px;
+    margin-bottom: 46px;
+    line-height: 30px;
+}
+.dancer-name-text h2{
+    font-size: 40px;
+}
+/* ===subcribe-section=== */
+.subcribe-section{
+    height: max-content;
+    padding-block: 50px;
+}
+.subcribe-section h3{
+    font-size: 35px;
+    padding-top:0px;
+    padding-bottom: 22px;
+    position: relative;
+    z-index: 25;
+}
+.subcribe-section p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 25;
+}
+.submit-box{
+    max-width:767px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 25;
+    background-color: transparent;
+    flex-direction: column;
+    gap:10px;
+}
+.submit-box input{
+    width:80%;
+    padding:10px 20px;
+}
+.submit-btn{
+    width:30%;
+    height:50px;
+    font-size: 15px;
+}
+.submit-btn:hover{
+    font-size: 18px;
+}
+/* ====footer==== */
+.footer-col-1{
+    width: 35%;
+    margin-inline-end: 20px;
+}
+}
+
+/* =======large-device====== */
+@media screen and (min-width:1200px) and (max-width:1340px){
+/* =====header-section======= */
+.header{
+    height: 100vh;
+}
+.header-text{
+    margin-top: 150px;
+}
+/* =====dance-tour-section-====== */
+.dance-container h2{
+    font-size: 47px;
+}
+.dance-container p{
+    max-width: 700px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 42px;
+}
+.dance-card .card{
+    max-width:330px;
+}
+/* =====prize-tour-section===== */
+.prize-title{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.prize-sub-title{
+    max-width: 650px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.prize-card{
+    max-width:320px;
+    padding:0 12px;
+    height:495px;
+    background: #e8631c;
+    border-radius: 10px;
+    text-align: center;
+    transition: .4s;
+}
+/* ======dance-ceta-section======= */
+.dance-ceta-1{
+    height:700px;
+}
+/* =====sats-section===== */
+.sats-section h2{
+    padding-top: 100px;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+.sats-section p{
+    font-size: 25px;
+    line-height: 33px;
+    padding-bottom:80px;
+}
+.sats-card-1{
+    width: 300px;
+}
+/* ====dancer-name-section===== */
+.dancer-name-section{
+    height:600px;
+}
+/* =====subcribe-section===== */
+.submit-box{
+    z-index: 10;
+    position: relative;
+}
+}
+
+
+/* ====extra-large-device======= */
+@media screen and (min-width:1600px){
+.body{
+    width: 1600px !important;
+    margin-inline: auto;
+}
+.header .sub-container.fixed{
+    width: 1600px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+}
